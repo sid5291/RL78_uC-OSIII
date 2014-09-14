@@ -1,0 +1,244 @@
+###############################################################################
+#                                                                             #
+# IAR Assembler V1.30.1.50601 for RL78                  25/Jul/2013  10:55:06 #
+# Copyright 2011-2013 IAR Systems AB.                                         #
+#                                                                             #
+#    Core         =  rl78_2                                                   #
+#    Source file  =  C:\Users\Alex\Documents\Teaching\Book Writin'\Advanced   #
+#                    RL78 Book\Chapters\Ch2\uCOS-III\uCOS-III-GlyphSrc\Softwa #
+#                    re\EvalBoards\Renesas\YRDKRL78G13\IAR\uCOS-III\Debug\Obj #
+#                    \LibReplacement.s87                                      #
+#    Command line =  "C:\Users\Alex\Documents\Teaching\Book Writin'\Advanced  #
+#                    RL78 Book\Chapters\Ch2\uCOS-III\uCOS-III-GlyphSrc\Softwa #
+#                    re\EvalBoards\Renesas\YRDKRL78G13\IAR\uCOS-III\Debug\Obj #
+#                    \LibReplacement.s87" --core rl78_2                       #
+#                    -D__DEVICE_FILE__=<ior5f104pj.h>                         #
+#                    -D__DEVICE_FILE_EXT__=<ior5f104pj_ext.h> -o              #
+#                    "C:\Users\Alex\Documents\Teaching\Book Writin'\Advanced  #
+#                    RL78 Book\Chapters\Ch2\uCOS-III\uCOS-III-GlyphSrc\Softwa #
+#                    re\EvalBoards\Renesas\YRDKRL78G13\IAR\uCOS-III\Debug\Obj #
+#                    \" -M<> -r -ld "C:\Users\Alex\Documents\Teaching\Book    #
+#                    Writin'\Advanced RL78 Book\Chapters\Ch2\uCOS-III\uCOS-II #
+#                    I-GlyphSrc\Software\EvalBoards\Renesas\YRDKRL78G13\IAR\u #
+#                    COS-III\Debug\List\" -D__NEAR_MODEL__                    #
+#                    -D__NEAR_DATA_MODEL__ --code_model near --data_model     #
+#                    near                                                     #
+#    List file    =  C:\Users\Alex\Documents\Teaching\Book Writin'\Advanced   #
+#                    RL78 Book\Chapters\Ch2\uCOS-III\uCOS-III-GlyphSrc\Softwa #
+#                    re\EvalBoards\Renesas\YRDKRL78G13\IAR\uCOS-III\Debug\Lis #
+#                    t\LibReplacement.lst                                     #
+#    Object file  =  C:\Users\Alex\Documents\Teaching\Book Writin'\Advanced   #
+#                    RL78 Book\Chapters\Ch2\uCOS-III\uCOS-III-GlyphSrc\Softwa #
+#                    re\EvalBoards\Renesas\YRDKRL78G13\IAR\uCOS-III\Debug\Obj #
+#                    \LibReplacement.r87                                      #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+##############################################################################
+# Module __HWDIV_8_8_8                                                       #
+##############################################################################
+
+ 
+ 16 bytes in segment RCODE , module __HWDIV_8_8_8
+ 
+ 16 bytes of CODE memory  in module __HWDIV_8_8_8
+
+##############################################################################
+# Module __HWMOD_8_8_8                                                       #
+##############################################################################
+
+    104                        ;------------------------------------------------------------------------------
+    105                        
+    106                        ;------------------------------------------------------------------------------
+    107                        ;       Modulo Operation of two unsigned chars
+    108                        ;
+    109                        ;       Input:  A         Operand 1
+    110                        ;               X         Operand 2
+    111                        ;
+    112                        ;       Call:   CALL       HWMOD_8_8_8
+    113                        ;
+    114                        ;       Output: A         Operand1 modulo Operand2
+    115                        ;               Z-flag
+    116                        ; This function can be used as replacement for the library function ?UC_MOD_L01
+    117                        ; by using the linker option -eHWMOD_8_8_8=?UC_MOD_L01
+    118                        ;------------------------------------------------------------------------------
+ 
+ 18 bytes in segment RCODE , module __HWMOD_8_8_8
+ 
+ 18 bytes of CODE memory  in module __HWMOD_8_8_8
+
+##############################################################################
+# Module __HWSDIV_8_8_8                                                      #
+##############################################################################
+
+    144                        ;------------------------------------------------------------------------------
+    145                        
+    146                        
+    147                        ;------------------------------------------------------------------------------
+    148                        ;       Division of two signed chars
+    149                        ;
+    150                        ;       Input:  A         Operand 1
+    151                        ;               X         Operand 2
+    152                        ;
+    153                        ;       Call:   CALL       HWSDIV_8_8_8
+    154                        ;
+    155                        ;       Output: A          Operand1 div Operand2
+    156                        ;               Z-flag
+    157                        ; This function can be used as replacement for the library function ?SC_DIV_L01
+    158                        ; by using the linker option -eHWSDIV_8_8_8=?SC_DIV_L01
+    159                        ;------------------------------------------------------------------------------
+ 
+ 49 bytes in segment RCODE , module __HWSDIV_8_8_8
+ 
+ 49 bytes of CODE memory  in module __HWSDIV_8_8_8
+
+##############################################################################
+# Module __HWSMOD_8_8_8                                                      #
+##############################################################################
+
+    211                        ;------------------------------------------------------------------------------
+    212                        
+    213                        ;------------------------------------------------------------------------------
+    214                        ;       Modulo Operation of two signed chars
+    215                        ;
+    216                        ;       Input:  A         Operand 1
+    217                        ;               X         Operand 2
+    218                        ;
+    219                        ;       Call:   CALL       HWSMOD_8_8_8
+    220                        ;
+    221                        ;       Output: A          Operand1 modulo Operand2
+    222                        ;               Z-flag
+    223                        ; This function can be used as replacement for the library function ?SC_MOD_L01
+    224                        ; by using the linker option -eHWSMOD_8_8_8=?SC_MOD_L01
+    225                        ;------------------------------------------------------------------------------
+ 
+ 50 bytes in segment RCODE , module __HWSMOD_8_8_8
+ 
+ 50 bytes of CODE memory  in module __HWSMOD_8_8_8
+
+##############################################################################
+# Module __HWSDIV_16_16_16                                                   #
+##############################################################################
+
+    278                        ;------------------------------------------------------------------------------
+    279                        
+    280                        
+    281                        ;------------------------------------------------------------------------------
+    282                        ;       Division of two signed ints
+    283                        ;
+    284                        ;       Input:  AX         Operand 1
+    285                        ;               BC         Operand 2
+    286                        ;
+    287                        ;       Call:   CALL       HWSDIV_16_16_16
+    288                        ;
+    289                        ;       Output: AX         Operand1 div Operand2
+    290                        ;               Z-flag
+    291                        ; This function can be used as replacement for the library function ?SI_DIV_L02
+    292                        ; by using the linker option -eHWSDIV_16_16_16=?SI_DIV_L02
+    293                        ;------------------------------------------------------------------------------
+ 
+ 65 bytes in segment RCODE , module __HWSDIV_16_16_16
+ 
+ 65 bytes of CODE memory  in module __HWSDIV_16_16_16
+
+##############################################################################
+# Module __HWSMOD_16_16_16                                                   #
+##############################################################################
+
+    348                        ;------------------------------------------------------------------------------
+    349                        
+    350                        ;------------------------------------------------------------------------------
+    351                        ;       Modulo Operation of two signed ints
+    352                        ;
+    353                        ;       Input:  AX         Operand 1
+    354                        ;               BC         Operand 2
+    355                        ;
+    356                        ;       Call:   CALL       HWSMOD_16_16_16
+    357                        ;
+    358                        ;       Output: AX         Operand1 div Operand2
+    359                        ;               Z-flag
+    360                        ; This function can be used as replacement for the library function ?SI_MOD_L02
+    361                        ; by using the linker option -eHWSMOD_16_16_16=?SI_MOD_L02
+    362                        ;------------------------------------------------------------------------------
+ 
+ 63 bytes in segment RCODE , module __HWSMOD_16_16_16
+ 
+ 63 bytes of CODE memory  in module __HWSMOD_16_16_16
+
+##############################################################################
+# Module __HWSDIV_32_32_32                                                   #
+##############################################################################
+
+    417                        ;------------------------------------------------------------------------------
+    418                        
+    419                        
+    420                        ;------------------------------------------------------------------------------
+    421                        ;       Division of two signed longs
+    422                        ;
+    423                        ;       Input:  AX, BC     Operand 1
+    424                        ;               Stack      Operand 2
+    425                        ;
+    426                        ;       Call:   CALL       HWSDIV_32_32_32
+    427                        ;
+    428                        ;       Output: AX, BC     Operand1 div Operand2
+    429                        ;               Z-flag
+    430                        ; This function can be used as replacement for the library function ?SL_DIV_L03
+    431                        ; by using the linker option -eHWSDIV_32_32_32=?SL_DIV_L03
+    432                        ;------------------------------------------------------------------------------
+ 
+ 173 bytes in segment RCODE , module __HWSDIV_32_32_32
+ 
+ 173 bytes of CODE memory  in module __HWSDIV_32_32_32
+
+##############################################################################
+# Module __HWSMOD_32_32_32                                                   #
+##############################################################################
+
+    558                        ;------------------------------------------------------------------------------
+    559                        
+    560                        
+    561                        ;------------------------------------------------------------------------------
+    562                        ;       Modulo Operation of two signed longs
+    563                        ;
+    564                        ;       Input:  AX, BC     Operand 1
+    565                        ;               Stack      Operand 2
+    566                        ;
+    567                        ;       Call:   CALL       HWSMOD_32_32_32
+    568                        ;
+    569                        ;       Output: AX, BC     Operand1 modulo Operand2
+    570                        ;               Z-flag
+    571                        ; This function can be used as replacement for the library function ?SL_MOD_L03
+    572                        ; by using the linker option -eHWSMOD_32_32_32=?SL_MOD_L03
+    573                        ;------------------------------------------------------------------------------
+ 
+ 181 bytes in segment RCODE , module __HWSMOD_32_32_32
+ 
+ 181 bytes of CODE memory  in module __HWSMOD_32_32_32
+
+##############################################################################
+# Module __HWSxxx_32_32_32                                                   #
+##############################################################################
+
+    703                        ;------------------------------------------------------------------------------
+    704                        
+    705                        
+    706                        ;------------------------------------------------------------------------------
+    707                        ;       Change sign of long
+    708                        ;
+    709                        ;       Input:  AX, BC     Operand
+    710                        ;
+    711                        ;       Call:   CALL       CHGSIGN_32
+    712                        ;
+    713                        ;       Output: AX, BC     -(Operand)
+    714                        ;------------------------------------------------------------------------------
+    740                        ;------------------------------------------------------------------------------
+    741                        
+    742                                END
+ 
+ 23 bytes in segment RCODE , module __HWSxxx_32_32_32
+ 
+ 23 bytes of CODE memory  in module __HWSxxx_32_32_32
+
+Errors: none
+Warnings: none

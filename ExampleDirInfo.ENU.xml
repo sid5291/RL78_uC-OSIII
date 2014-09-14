@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<infocenter_data version="1.0">
+  <iar_template_variant>A</iar_template_variant>
+  <iar_name>Micriµm µC/OS (Real Time Operating System)</iar_name>                          
+  <iar_title>Micriµm example projects.</iar_title>            
+  <iar_description>Getting started with Micriµm µC/OS for Renesas RL78.</iar_description>
+</infocenter_data>

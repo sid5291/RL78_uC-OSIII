@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<infocenter_data version="1.0">
+  <iar_name>RENESAS RDKRL78G13</iar_name>
+  <iar_description>µC/OS start project for the Renesas RDKRL78G13 RL78/G13 Demonstration Kit.</iar_description>
+  <iar_curdir>$CUR_DIR$</iar_curdir>
+</infocenter_data>

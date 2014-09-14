@@ -1,0 +1,52 @@
+ECE561
+Project 2 v2
+	- Fixed Error Time Calculation in CPU_TS_TmrRd()
+skumar15
+
+Functionality impelemented
+	- Plumb Bob LED
+	- Wait Time stats
+	- Max Stack Size per task
+	- CPUUsage per Task
+	- Total CPU Usage
+	- Error message for CPU errors
+	- LED error for LCD Mutex error
+
+Files Modified:
+r_cg_intc_user.c
+	- Switch interrupts
+	- Post Semaphore for Display Task
+r_cg_userdefine.h
+	- defines and global vars/structs
+r_cg_timer_user.h 
+	- overflow count 
+lcd.c/lcd.h
+	- LCD Mutex
+	- LCD Error Display
+	- LED Error Indicator
+	- Stats Collection for mutex wait time
+os_cfg.h
+	- Enable Debug,Stacks and Stats functionality
+os.h
+	- Include MaxStk var to os_tcb
+os_stats.c
+	- Calculate MaxStk
+os_task.c
+	- Initialize MaxStk
+accel.c
+	- Accel_sem pending
+	- Stats for Semaphore wait time
+	- Message post for accel data
+app.c
+	- New tasks added
+		- Plumb Bob LED function (App_TaskLeds)
+		- Statistics Display (App_StatDisp)
+	-Side functions
+		- clearLEDS
+		- read_stat (To read statistics from tcb)
+	- Added Mutex and Semaphore creation
+	- Created Tasks
+cpu_bsp.c
+	- Modified CPU_TS_TmrRd() to get TimeStamp
+
+	

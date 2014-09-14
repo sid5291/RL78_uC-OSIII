@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exampleInfo>
+  <copyDir>..\BSP\</copyDir>
+  <copyDir>..\BSP\GlyphLib\Drivers\</copyDir>
+  <copyDir>..\BSP\GlyphLib\glyph\</copyDir>
+  <copyDir>..\..\..\..\..\uC-CPU\</copyDir>
+  <copyDir>..\..\..\..\..\uC-CPU\RL78\IAR\</copyDir>
+  <copyDir>..\..\..\..\..\uC-LIB\</copyDir>
+  <copyDir>..\..\..\..\..\uCOS-III\Ports\Renesas\RL78\IAR\</copyDir>
+  <copyDir>..\..\..\..\..\uCOS-III\Source\</copyDir>
+</exampleInfo>
+
